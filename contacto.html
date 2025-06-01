@@ -9,24 +9,31 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <header class="bg-primary text-white text-center py-4">
-    <h1>IDW S.A</h1>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-      <div class="container">
-        <a class="navbar-brand" href="index.html">IDW</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav ms-auto">
-            <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
-            <li class="nav-item"><a class="nav-link" href="institucional.html">Institucional</a></li>
-            <li class="nav-item"><a class="nav-link active" href="contacto.html">Contacto</a></li>
-          </ul>
+  <header class="bg-dark text-white shadow-sm">
+  <div class="container py-3 d-flex justify-content-between align-items-center">
+  <h1 class="h3 mb-0">
+    <a href="index.html" class="text-white text-decoration-none">IDW S.A</a>
+  </h1>
+    <span class="d-none d-md-inline text-light-50">Eventos infantiles con magia y calidad</span>
+  </div>
+
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark border-top border-secondary">
+    <div class="container">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <a class="btn btn-outline-light ms-2" href="index.html">Inicio</a>
+          <a class="btn btn-outline-light ms-2" href="institucional.html">Institucional</a>
+          <a class="btn btn-outline-light ms-2" href="contacto.html">Contacto</a>
+          <a class="btn btn-outline-light ms-2" href="altaSalon.html">Admin</a>
+          <!-- <a id="logout" class="btn btn-outline-light ms-2" href="#">Cerrar sesión</a> -->
         </div>
       </div>
-    </nav>
-  </header>
+    </div>
+  </nav>
+</header>
 
   <main class="container py-4">
     <h2 class="mb-4">Contacto</h2>
@@ -50,8 +57,8 @@
     </form>
   </main>
 
-  <footer class="bg-primary text-white text-center py-3 mt-5">
-    <p>© 2025 - IDW S.A</p>
+  <footer class="bg-dark text-white text-center py-3 mt-5">
+    <p class="mb-0">© 2025 - IDW S.A</p>
   </footer>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>

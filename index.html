@@ -11,65 +11,76 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <header class="bg-primary text-white text-center py-4">
-    <h1>IDW S.A</h1>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-      <div class="container">
-        <a class="navbar-brand" href="#">IDW</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav ms-auto">
-            <li class="nav-item"><a class="nav-link active" href="index.html">Inicio</a></li>
-            <li class="nav-item"><a class="nav-link" href="institucional.html">Institucional</a></li>
-            <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
-          </ul>
+  <header class="bg-dark text-white shadow-sm">
+  <div class="container py-3 d-flex justify-content-between align-items-center">
+  <h1 class="h3 mb-0">
+    <a href="index.html" class="text-white text-decoration-none">IDW S.A</a>
+  </h1>
+    <span class="d-none d-md-inline text-light-50">Eventos infantiles con magia y calidad</span>
+  </div>
+
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark border-top border-secondary">
+    <div class="container">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <a class="btn btn-outline-light ms-2" href="index.html">Inicio</a>
+          <a class="btn btn-outline-light ms-2" href="institucional.html">Institucional</a>
+          <a class="btn btn-outline-light ms-2" href="contacto.html">Contacto</a>
+          <a class="btn btn-outline-light ms-2" href="altaSalon.html">Admin</a>
+          <!-- <a id="logout" class="btn btn-outline-light ms-2" href="#">Cerrar sesión</a> -->
         </div>
       </div>
-    </nav>
-  </header>
+    </div>
+  </nav>
+</header>
 
-  <main class="container py-4">
-    <h2 class="mb-4">Bienvenidos</h2>
-    <p>Esta es la página de inicio de nuestro sitio...</p>
+  <main class="container">
+  <div class="text-center mb-5">
+    <h2>Bienvenidos</h2>
+    <p>Esta es la página de inicio de nuestro sitio, dedicada a ofrecer servicios profesionales y confiables para tus eventos.</p>
+  </div>
 
-    <section class="resumen-servicios mt-5">
-      <h2 class="text-primary">Nuestros Servicios</h2>
-      <div class="row mt-4">
-        <div class="col-md-4 mb-4">
-          <div class="card h-100">
-            <div class="card-body">
-              <h5 class="card-title">Alquiler de Salones</h5>
-              <p class="card-text">Espacios temáticos totalmente equipados para celebraciones.</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-4 mb-4">
-          <div class="card h-100">
-            <div class="card-body">
-              <h5 class="card-title">Animaciones y Shows</h5>
-              <p class="card-text">Animadores, payasos, magos y personajes para eventos inolvidables.</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-4 mb-4">
-          <div class="card h-100">
-            <div class="card-body">
-              <h5 class="card-title">Catering Infantil</h5>
-              <p class="card-text">Menúes pensados para los chicos, con opciones saludables y ricas.</p>
-            </div>
+  <section class="resumen-servicios">
+    <h3 class="text-center mb-4">Nuestros Servicios</h3>
+    <div class="row g-4">
+      <div class="col-md-4">
+        <div class="card h-100">
+          <div class="card-body">
+            <h5 class="card-title">Alquiler de Salones</h5>
+            <p class="card-text">Espacios temáticos totalmente equipados para celebraciones únicas y elegantes.</p>
           </div>
         </div>
       </div>
-    </section>
-  </main>
 
-  <footer class="bg-primary text-white text-center py-3 mt-5">
-    <p>© 2025 - IDW S.A</p>
+      <div class="col-md-4">
+        <div class="card h-100">
+          <div class="card-body">
+            <h5 class="card-title">Animaciones y Shows</h5>
+            <p class="card-text">Animadores profesionales para eventos inolvidables, con variedad de estilos y temáticas.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card h-100">
+          <div class="card-body">
+            <h5 class="card-title">Catering Infantil</h5>
+            <p class="card-text">Menús diseñados con ingredientes de calidad y balanceados para los más pequeños.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+
+  <footer class="bg-dark text-white text-center py-3 mt-5">
+    <p class="mb-0">© 2025 - IDW S.A</p>
   </footer>
+
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
