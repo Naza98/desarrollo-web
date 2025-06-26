@@ -23,6 +23,8 @@
             <div class="collapse navbar-collapse justify-content-end" id="navbarSalones">
             <div class="navbar-nav">
                 <a href="index.html" class="btn btn-outline-light ms-2">Inicio</a>
+                <a href="servicios.html" class="btn btn-outline-light ms-2">Gestión de Servicios</a>
+                <a href="usuarios.html" class="btn btn-outline-light ms-2">Gestión de Usuarios</a>
                 <a id="logout" class="btn btn-outline-light ms-2" href="#">Cerrar sesión</a>
             </div>
             </div>
@@ -50,6 +52,11 @@
             </div>
 
             <div class="mb-3">
+                <label for="precio" class="form-label">Precio</label>
+                <input type="number" class="form-control" id="precio" placeholder="$" required></input>
+            </div>
+
+            <div class="mb-3">
                 <label for="logo" class="form-label">Logo o imagen del salón</label>
                 <input type="file" class="form-control" id="logo" accept="image/*">
             </div>
@@ -61,27 +68,30 @@
         </div>
     </div>
 
-    <h3 class="mt-5">Lista de Salones</h3>
-    <table id="tablaSalones" class="table table-striped mt-3">
-        <thead>
-            <tr>
-                <th>Nombre del salón</th>
-                <th>Dirección</th>
-                <th>Descripción</th>
-                <th>Logo</th>
-                <th>Acciones</th>
-            </tr>
-        </thead>
-        <tbody>
+    <div class="container">
+        <h3 class="mt-5">Lista de Salones</h3>
+        <table id="tablaSalones" class="table table-striped mt-3">
+            <thead>
+                <tr>
+                    <th>Nombre del salón</th>
+                    <th>Dirección</th>
+                    <th>Descripción</th>
+                    <th>Precio</th>
+                    <th>Logo</th>
+                    <th>Acciones</th>
+                </tr>
+            </thead>
+            <tbody>
 
-        </tbody>
-    </table>
+            </tbody>
+        </table>
+    </div>
     <footer class="bg-dark text-white text-center py-3 mt-5">
         <p class="mb-0">© 2025 - IDW S.A</p>
     </footer>
 
 </body>
-<script src="js/altaSalon.js"></script>
-<script src="js/accionesSalon.js"></script>
+<script type="module" src="js/altaSalon.js"></script>
+<script type="module" src="js/accionesSalon.js"></script>
 
 </html>

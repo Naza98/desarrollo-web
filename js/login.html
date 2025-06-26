@@ -22,30 +22,13 @@
       <button type="submit" class="btn btn-primary w-100">Ingresar</button>
 
       <div class="mt-3 text-center text-muted" style="font-size: 0.9em;">
-        <p><strong>Usuario:</strong> <code>admin</code></p>
-        <p><strong>Contraseña:</strong> <code>1234</code></p>
+        <p><strong>Usuario:</strong> <code>emilys</code></p>
+        <p><strong>Contraseña:</strong> <code>emilyspass</code></p>
       </div>
     </form>
   </div>
 </body>
-<script>
-    if(sessionStorage.getItem(usuario)){ // preguntamos si el user existe 
-        alert('Este usuario está logueado..')
-        window.location.href = '../altaSalon.html'; // redireccionamos al user logueado al form de carga
-    }
-    document.getElementById('idFormLogin').addEventListener('submit', function(event){ //cuando se haga click sobre el botòn del formulario
-        event.preventDefault(); // que no se recargue la página
-
-        const usuario = document.getElementById('usuario').value
-        const constrasenia = document.getElementById('contrasenia').value
-
-        if(usuario === 'admin' && constrasenia === '1234'){
-            sessionStorage.setItem('usuario', usuario)
-            alert('Logueo exitoso!')
-            window.location.href = '../altaSalon.html'
-        } else {
-            alert('Usuario incorrecto')
-        }
-    })
+<script type="module" src="login.js">
+    
 </script>
 </html>

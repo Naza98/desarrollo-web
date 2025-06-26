@@ -1,6 +1,13 @@
+import { verificarAutenticacion } from './auth.js';
 
-function eliminarSalon(index) {
+
+
+async function eliminarSalon(index) {
     if (confirm("¿Estás seguro de que querés eliminar este salón?")) {
+
+        const autenticado = await verificarAutenticacion();
+        if (!autenticado) return;
+
         const salones = JSON.parse(localStorage.getItem('salones')) || [];
         salones.splice(index, 1);
         localStorage.setItem('salones', JSON.stringify(salones));
@@ -10,7 +17,11 @@ function eliminarSalon(index) {
     }
 }
 
-function editarSalon(index) {
+async function editarSalon(index) {
+
+    const autenticado = await verificarAutenticacion();
+    if (!autenticado) return;
+
     const salones = JSON.parse(localStorage.getItem('salones')) || [];
     const salon = salones[index];
 
@@ -19,6 +30,9 @@ function editarSalon(index) {
     form.nombre.value = salon.nombre;
     form.direccion.value = salon.direccion;
     form.descripcion.value = salon.descripcion;
+    
+    const precioLimpio = salon.precio ? salon.precio.toString().replace(/,/g, '') : '';
+    form.precio.value = precioLimpio;
 
     window.indexEditar = index;
 
@@ -28,3 +42,5 @@ function editarSalon(index) {
     btn.classList.add('btn-warning');
 }
 
+window.eliminarSalon = eliminarSalon;
+window.editarSalon = editarSalon;
