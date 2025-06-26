@@ -2,45 +2,6 @@ import { verificarAutenticacion } from "./auth.js";
 
 document.addEventListener('DOMContentLoaded', async () => {
 
-    // Inicializar servicios hardcodeados si no existen
-    if (!localStorage.getItem('servicios')) {
-        const serviciosHardcode = [
-            {
-                descripcion: 'Servicio de catering infantil completo con menú balanceado y bebidas',
-                valor: '1800'
-            },
-            {
-                descripcion: 'DJ profesional con música infantil y sistema de sonido',
-                valor: '1200'
-            },
-            {
-                descripcion: 'Decoración temática con globos, guirnaldas y centros de mesa',
-                valor: '950'
-            },
-            {
-                descripcion: 'Animador profesional con juegos, obras de teatro y actividades',
-                valor: '1500'
-            },
-            {
-                descripcion: 'Servicio de fotografía y video del evento',
-                valor: '2200'
-            },
-            {
-                descripcion: 'Alquiler de inflables y juegos para exteriores',
-                valor: '800'
-            },
-            {
-                descripcion: 'Show de magia interactivo para niños',
-                valor: '1100'
-            },
-            {
-                descripcion: 'Servicio de limpieza post-evento',
-                valor: '600'
-            }
-        ];
-        localStorage.setItem('servicios', JSON.stringify(serviciosHardcode));
-    }
-
     const autenticado = await verificarAutenticacion();
     if (!autenticado) return;
 
